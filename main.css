@@ -668,7 +668,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ffff9f;
+  background-color: #8742c0a6;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -746,11 +746,11 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #57b1bd;
+  background-color: red;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  color: #111;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -771,12 +771,12 @@ body {
   font-size: 1.1rem;
   font-weight: 600;
   position: absolute;
-  color: #111;
+  color: #fff;
   bottom: 5%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: #fff;
+  background-color: red;
   padding: 6px 15px;
   border-radius: 5px;
   -webkit-box-shadow: 1px 1px 5px rgba(34, 34, 34, 0.418);
