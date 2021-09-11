@@ -144,6 +144,12 @@ body {
   gap: 1.2vw;
 }
 
+@media (max-width: 700px) {
+  .header-p .share {
+    display: none;
+  }
+}
+
 .header-p .share .single_share {
   width: 35px;
   height: 35px;
@@ -384,7 +390,7 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-flow: wrap-reverse;
             flex-flow: wrap-reverse;
-    margin-top: 130px;
+    margin-top: 95px;
   }
 }
 
@@ -396,7 +402,7 @@ body {
 .top-text-and-clouds .text .title-text {
   font-size: 2.8rem;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .top-text-and-clouds .text .details-text {
@@ -409,7 +415,7 @@ body {
 
 .top-text-and-clouds .plane {
   z-index: 10;
-  width: 250px;
+  width: 280px;
 }
 
 .top-text-and-clouds .plane img {
@@ -424,8 +430,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 2rem;
-  padding: 3rem;
+  padding: 5.5rem 3rem;
+  background-color: #baffba;
 }
 
 @media (max-width: 700px) {
@@ -438,6 +444,7 @@ body {
   font-size: 2.5rem;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .about-me .row-side {
@@ -490,12 +497,166 @@ body {
 .about-me .row-side .my-image .name {
   font-size: 2rem;
   margin-top: 5px;
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-weight: 600;
 }
 
 .about-me .row-side .about-me-text {
   max-width: 700px;
   font-size: 1.4rem;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem 3rem;
+  background-color: #ffc8c8;
+}
+
+@media (max-width: 700px) {
+  .skills {
+    padding: 1.5rem 10px;
+  }
+}
+
+.skills .skills-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.skills .row-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.skills .row-side .col-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills .row-side .col-side .single-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.skills .row-side .col-side .single-part .skill-set {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  margin-bottom: 15px;
+}
+
+.skills .row-side .col-side .single-part .skill-set::before {
+  background-image: url(./images/main/kurama-naruto-kurama.gif);
+  background-size: 100% 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  content: "";
+  /*size of your image*/
+  height: 80px;
+  width: 85px;
+}
+
+.skills .row-side .col-side .single-part .all-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+@media (max-width: 600px) {
+  .skills .row-side .col-side .single-part .all-skills {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.skills .row-side .col-side .single-part .all-skills .single-skill {
+  font-size: 1.4rem;
+  background-color: #a67979;
+  padding: 8px 15px;
+  border-radius: 6px;
+  color: #fff;
+  min-width: 130px;
+  text-align: center;
+}
+
+.skills .row-side .img-skill {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (max-width: 600px) {
+  .skills .row-side .img-skill img {
+    height: 300px;
+  }
+}
+
+.skills .download-my-res {
+  font-size: 2.2rem;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.skills .resume-img {
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 1rem;
+}
+
+.skills .resume-img a img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

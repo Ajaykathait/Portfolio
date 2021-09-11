@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 body {
     margin: 0;
     background-color: #ece8dc;
@@ -87,6 +87,9 @@ body {
         flex-direction: row;
         align-items: center;
         gap: 1.2vw;
+        @media (max-width: 700px) {
+            display: none;
+        }
         .single_share {
             width: 35px;
             height: 35px;
@@ -240,7 +243,7 @@ body {
     @media (max-width: 700px) {
         padding: 3rem 10px;
         flex-flow: wrap-reverse;
-        margin-top: 130px;
+        margin-top: 95px;
     }
     // .fix-img{
     //     position: absolute;
@@ -257,7 +260,7 @@ body {
         .title-text {
             font-size: 2.8rem;
             font-weight: 600;
-            margin-bottom: 25px;
+            margin-bottom: 35px;
         }
         .details-text {
             font-size: 1.8rem;
@@ -269,7 +272,7 @@ body {
     }
     .plane {
         z-index: 10;
-        width: 250px;
+        width: 280px;
         img {
             width: 100%;
         }
@@ -278,16 +281,17 @@ body {
 .about-me {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
-    padding: 3rem;
+    padding: 5.5rem 3rem;
+    background-color: #baffba;
     @media (max-width: 700px) {
         padding: 1.5rem 10px;
-
     }
     .about-title {
         font-size: 2.5rem;
         font-weight: 500;
         text-align: center;
+        margin-bottom: 1.5rem;
+
     }
     .row-side {
         display: flex;
@@ -312,16 +316,109 @@ body {
                 height: 100%;
                 object-fit: cover;
             }
-            .name{
+            .name {
                 font-size: 2rem;
                 margin-top: 5px;
-                font-family: 'Sacramento', cursive;
+                font-family: "Sacramento", cursive;
                 font-weight: 600;
             }
         }
         .about-me-text {
             max-width: 700px;
             font-size: 1.4rem;
+        }
+    }
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 3rem;
+    background-color: #ffc8c8;
+    @media (max-width: 700px) {
+        padding: 1.5rem 10px;
+    }
+    .skills-title {
+        font-size: 2.5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    .row-side {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: wrap;
+
+        .col-side {
+            display: flex;
+            flex-direction: column;
+            .single-part {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2.5rem;
+                .skill-set {
+                    font-size: 2rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                    margin-bottom: 15px;
+                    &::before {
+                        background-image: url(./images/main/kurama-naruto-kurama.gif);
+                        background-size: 100% 100%;
+                        display: inline-flex;
+                        content: "";
+                        /*size of your image*/
+                        height: 80px;
+                        width: 85px;
+                    }
+                }
+                .all-skills {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    flex-flow: wrap;
+                    @media (max-width: 600px) {
+                        justify-content: center;
+                    }
+
+                    .single-skill {
+                        font-size: 1.4rem;
+                        background-color: #a67979;
+                        padding: 8px 15px;
+                        border-radius: 6px;
+                        color: #fff;
+                        min-width: 130px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .img-skill{
+            width: fit-content;
+            img{
+                @media (max-width: 600px) {
+                    height: 300px;
+                }
+            }
+        }
+    }
+    .download-my-res{
+        font-size: 2.2rem;
+        margin-top: 4rem;
+        display: flex;
+        align-self: center;
+    }
+    .resume-img{
+        width: 50px;
+        display: flex;
+        align-self: center;
+        margin-top: 1rem;
+        a{
+            img{
+                width: 100%;
+            }
         }
     }
 }
