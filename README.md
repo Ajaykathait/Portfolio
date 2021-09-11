@@ -10,14 +10,13 @@
 
 ## Implementation
 - ⚡ I have used SCSS to write children block CSS within the parent block cause why not! it just helps me navigate easily.
-- ⚡ Used a javascript function to create sidebar dropdown where icons changed on-click.
-- ⚡ Font awesome has been used to import icons from cdn provided in document.
+- ⚡ SVG's has been used for icons from www.flaticon.com.
 
 ## Goal
-- 🥅 This project is currently on progress with a goal to store all my web development notes.
+- 🥅 This project is currently on progress with a goal to store all my web development Projects.
 
 
 <br />
 <br />
 
-[website]: https://complexfoundation.com/mayurPortfolio/projects/DocumentationTemplate/
+[website]: https://eloquent-ritchie-367799.netlify.app/
