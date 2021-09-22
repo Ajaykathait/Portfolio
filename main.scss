@@ -245,15 +245,7 @@ body {
         flex-flow: wrap-reverse;
         margin-top: 95px;
     }
-    // .fix-img{
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 40px;
-    //     img{
-    //         width: 100%;
-    //     }
-    // }
+
     .text {
         z-index: 10;
         color: #fff;
@@ -368,7 +360,6 @@ body {
                         background-size: 100% 100%;
                         display: inline-flex;
                         content: "";
-                        /*size of your image*/
                         height: 80px;
                         width: 85px;
                     }
@@ -570,7 +561,7 @@ body {
                 }
             }
         }
-        button{
+        button {
             width: 100%;
             max-width: 700px;
             font-size: 1.4rem;
@@ -579,12 +570,10 @@ body {
             outline: none;
             font-weight: 600;
             border: none;
-            padding: 8px ;
+            padding: 8px;
             margin-top: 1rem;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
             border-radius: 5px;
         }
-    }
-    .thank-text {
     }
 }
