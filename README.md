@@ -19,4 +19,15 @@
 <br />
 <br />
 
+1. GitHub repo Link  -  https://github.com/Ajaykathait/Portfolio
+2. Project Hosted on Netlify - https://eloquent-ritchie-367799.netlify.app/
+3. Project Name - Portfolio.
+4. Project description - This project is for HTML and CSS practice which I am serving as a mini project
+This is a responsive (mobile/desktop) and light-weight HTML/CSS documentation template.
+5. WHY this project - Project portfolio management enables organizations to achieve higher rates of success by aligning them with mid-to-long-term company goals.
+6. Tech Stack - HTML, SCSS, CSS.
+7. WHAT features - Home page, About Page, Portfolio Page, Skills Section.
+
+
+
 [website]: https://eloquent-ritchie-367799.netlify.app/
